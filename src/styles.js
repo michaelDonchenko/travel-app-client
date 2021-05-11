@@ -26,9 +26,9 @@ const styles = makeStyles((theme) => ({
     fontSize: '1rem',
   },
 
-  inputField: {
+  input: {
     width: '350px',
-    margin: theme.spacing(2, 'auto'),
+    margin: theme.spacing(2),
     maxWidth: '90%',
   },
 

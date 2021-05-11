@@ -77,50 +77,52 @@ const Register = () => {
       </DialogTitle>
 
       <div>
-        <form className={classes.flexCenter} onSubmit={handleSubmit}>
-          <TextField
-            fullWidth
-            label='Username'
-            type='text'
-            variant='standard'
-            name='username'
-            value={username}
-            onChange={handleChange}
-            className={classes.inputField}
-          />
+        <form onSubmit={handleSubmit}>
+          <div className={classes.flexCenter}>
+            <TextField
+              fullWidth
+              label='Username'
+              type='text'
+              variant='standard'
+              name='username'
+              value={username}
+              onChange={handleChange}
+              className={classes.input}
+            />
 
-          <TextField
-            fullWidth
-            label='Email'
-            type='email'
-            variant='standard'
-            name='email'
-            value={email}
-            onChange={handleChange}
-            className={classes.inputField}
-          />
+            <TextField
+              fullWidth
+              label='Email'
+              type='email'
+              variant='standard'
+              name='email'
+              value={email}
+              onChange={handleChange}
+              className={classes.input}
+            />
 
-          <TextField
-            fullWidth
-            label='Password'
-            type='password'
-            variant='standard'
-            name='password'
-            value={password}
-            onChange={handleChange}
-            className={classes.inputField}
-          />
+            <TextField
+              fullWidth
+              label='Password'
+              type='password'
+              variant='standard'
+              name='password'
+              value={password}
+              onChange={handleChange}
+              className={classes.input}
+            />
 
-          <Button
-            variant='contained'
-            color='primary'
-            type='submit'
-            className={classes.popupButton}
-          >
-            {loading ? 'Loading...' : 'Register'}
-          </Button>
+            <Button
+              variant='contained'
+              color='primary'
+              type='submit'
+              className={classes.popupButton}
+            >
+              {loading ? 'Loading...' : 'Register'}
+            </Button>
+          </div>
         </form>
-        <p className={classes.inputField}>
+        <p className={classes.input}>
           Already have account?
           <span onClick={handleModalSwitch} className={classes.modalLink}>
             Login
