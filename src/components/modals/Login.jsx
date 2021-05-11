@@ -1,6 +1,7 @@
 import {
   Button,
   Dialog,
+  DialogContent,
   DialogTitle,
   TextField,
   Typography,
@@ -79,7 +80,7 @@ const Login = () => {
         </Typography>
       </DialogTitle>
 
-      <div>
+      <DialogContent>
         <form onSubmit={handleSubmit}>
           <div className={classes.flexCenter}>
             <TextField
@@ -90,7 +91,7 @@ const Login = () => {
               type='text'
               variant='standard'
               onChange={handleChange}
-              className={classes.input}
+              style={{ margin: '5px auto' }}
             />
 
             <TextField
@@ -101,7 +102,7 @@ const Login = () => {
               name='password'
               value={password}
               onChange={handleChange}
-              className={classes.input}
+              style={{ margin: '5px auto' }}
             />
 
             <Button
@@ -130,7 +131,7 @@ const Login = () => {
             Here
           </span>
         </p>
-      </div>
+      </DialogContent>
 
       <ResetPasswordForm show={showPasswordReset} />
     </Dialog>

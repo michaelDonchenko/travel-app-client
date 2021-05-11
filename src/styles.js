@@ -29,7 +29,6 @@ const styles = makeStyles((theme) => ({
   input: {
     width: '350px',
     margin: theme.spacing(2),
-    maxWidth: '90%',
   },
 
   flexCenter: {
