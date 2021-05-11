@@ -8,7 +8,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import PasswordReset from './pages/PasswordReset'
 import { useDispatch } from 'react-redux'
 import { windowResizer } from './redux/reducers/mapSlice'
-import 'mapbox-gl/dist/mapbox-gl.css'
 
 const App = () => {
   const dispatch = useDispatch()

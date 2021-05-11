@@ -11,7 +11,7 @@ const MapMarker = ({ viewport, long, lat, marker }) => {
     latitude: lat,
     longitude: long,
     zoom: 11,
-    transitionInterpolator: new FlyToInterpolator({ speed: 1.2 }),
+    // transitionInterpolator: new FlyToInterpolator({ speed: 1.2 }),
     transitionDuration: 1000,
   }
 

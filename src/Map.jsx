@@ -22,6 +22,7 @@ import PinModel from './components/modals/PinModel'
 import MapErrorMessage from './components/snackBars/MapErrorMessage'
 import CloudinaryErrorMessage from './components/snackBars/CloudinaryErrorMessage'
 import About from './components/modals/About'
+import 'mapbox-gl/dist/mapbox-gl.css'
 
 function Map() {
   const dispatch = useDispatch()
@@ -45,8 +46,6 @@ function Map() {
     await dispatch(logout())
     cookies.remove('user')
   }
-
-  console.log(process.env.REACT_APP_MAPBOX_TOKEN)
 
   return (
     <>
